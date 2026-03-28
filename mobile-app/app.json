@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Music Assistant",
+    "slug": "music-assistant-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.musicassistant.app",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.musicassistant.app",
+      "usesCleartextTraffic": true
+    },
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}

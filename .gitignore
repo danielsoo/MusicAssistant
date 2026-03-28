@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+# Large / local-only (GitHub 100MB limit; re-download or generate locally)
+downloads/
+training_data/
+backend/IRMAS-TrainingData.zip
+backend/IRMAS-TrainingData/
+*.mp3
+# Solo chord learning artifacts (your edits = ground truth)
+data/chord_corrections.jsonl
+data/chord_learned_priors.json

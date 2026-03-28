@@ -1,0 +1,24 @@
+  Unique pairs: 62 / 62 total
+
+Train: 53쌍  /  Val: 9쌍
+에포크당 샘플: train 3180  /  val 540
+
+[학습 데이터 로드]
+  Loading 53 pairs...
+  [1/53] 0049_silona_learninghowtofly_full  [2/53] 0057_thelongwait_lookoutmountain_full  [3/53] 0017_fabiannavarro_despierta_full  [4/53] 0000_adambuckley_dragmedown_full  [5/53] 0004_benjaminjohn_betterway_full  [6/53] 0014_diesel13_colourmered_full  [7/53] 0044_redwood_smokerandthestoner_full  [8/53] 0010_cottondrifting_rainydayii_full  [9/53] 0058_thelongwait_santa_full  [10/53] 0030_mr0702_leaf_full  [11/53] 0012_davidtyo_longwayhome_full  [12/53] 0056_swingingsteaks_lostmyway_full  [13/53] 0007_butterflyeffect_preachrighthere_full  [14/53] 0021_glenmcphee_asailoroncemore_full  [15/53] 0015_eagersails_hatesongs_full  [16/53] 0032_minisimmons_pushandpull_full  [17/53] 0035_perdidosnazonasul_meubem_full  [18/53] 0051_skyeezandthewhiteflies_bananasplit_full  [19/53] 0023_guarna_unavitasola_full  [20/53] 0020_glenmcphee_asailoroncemore  [21/53] 0043_randomsomebody_crazyforme_full  [22/53] 0033_patricktalbot_fool_full  [23/53] 0003_annablanton_waves_full  [24/53] 0034_pawelmaciwoda_1ofthefirst_full  [25/53] 0029_lyndseyollard_catchingup_full  [26/53] 0028_ludo_sandstorm_full  [27/53] 0008_cefmallorcagssii_viviendodelreves_full  [28/53] 0052_skyeezandthewhiteflies_jumpacross_full  [29/53] 0060_wesleymorgan_backroomintulsa_full  [30/53] 0046_ronniejones_whydontyoustay_full  [31/53] 0047_secretariat_borderline_full  [32/53] 0042_raftmonk_tiring_full  [33/53] 0025_hazael_amorquelucha_full  [34/53] 0005_bluesbastards_sugar_full  [35/53] 0031_marcellason_treadmills_full  [36/53] 0061_wessmeetswest_directexperience_full  [37/53] 0026_hollowstate_hurricane_full  [38/53] 0041_qupe_ayninehirde_full  [39/53] 0011_davidtyo_amen_full  [40/53] 0039_primakova_theglass_full  [41/53] 0048_shortwaveradioband_someday_full  [42/53] 0018_fergessen_backfromthestart_full  [43/53] 0059_thetravellingband_passingships_full  [44/53] 0037_peterwhite_thebluesisalady_full  [45/53] 0019_franciscoperez_spaces_full  [46/53] 0045_rodalexander_tearsintherain_full  [47/53] 0040_prusinski_magdalena_full  [48/53] 0024_hazael_amilado_full  [49/53] 0055_swingbazar_flechedor_full  [50/53] 0002_annablanton_waves  [51/53] 0001_andresguazzelli_attention_full  [52/53] 0006_brianccaifeihong_neverletyougo_full  [53/53] 0054_strobe_nostalgic_full
+  Loaded: 53  (guitar_demucs: 53/53)  skipped: 0
+[검증 데이터 로드]
+  Loading 9 pairs...
+  [1/9] 0036_peterwhite_crazygirl_full  [2/9] 0050_simplemachine_ingloria_full  [3/9] 0013_davidtyo_ohlife_full  [4/9] 0053_strobe_gone_full  [5/9] 0009_catfolkin_santjordi_full  [6/9] 0027_ilmarikontia_funkkihillo_full  [7/9] 0016_emberrev_divesandlazarus_full  [8/9] 0038_plancaliente_elmarinero_full  [9/9] 0022_guarna_unavitasola_full__1_
+  Loaded: 9  (guitar_demucs: 9/9)  skipped: 0
+
+디바이스: mps
+
+기존 guitar_separator.pt 발견. 이어서 학습? [y/N] /Users/younsoopark/Documents/Privacy/HooHacks/music-assistant/scripts/train_separator_v4.py:375: UserWarning: Empty filters detected in mel frequency basis. Some channels will produce empty responses. Try increasing your sampling rate (and fmax) or reducing n_mels.
+  fb_np = librosa.filters.mel(sr=SR, n_fft=n_fft, n_mels=n_mels_cur)
+  기존 가중치 로드 완료, 파인튜닝 시작
+
+  Ep   trn_ac   trn_el   val_ac   val_el   ac_SDR   el_SDR   time
+-----------------------------------------------------------------
+   1   0.0678   0.0921   0.0413   0.0838  -53.04dB  -53.60dB  547.1s ★
+  ★ 저장 (ac=0.0413  el=0.0838  SI-SDR ac=-53.04dB  el=-53.60dB)

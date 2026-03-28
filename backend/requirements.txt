@@ -1,0 +1,15 @@
+# Chord pipeline (basic-pitch → TensorFlow): on macOS use Python 3.10 or 3.11.
+# Python 3.12+ fails: no tensorflow-macos wheels for basic-pitch's dependency set.
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+demucs>=4.0.1
+torchcodec
+basic-pitch>=0.4.0
+librosa>=0.10.2
+soundfile>=0.12.1
+numpy>=1.24.0
+scipy>=1.10.0
+pymongo>=4.8.0
+python-dotenv>=1.0.1
+google-auth>=2.35.0
